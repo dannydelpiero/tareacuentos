@@ -1,7 +1,22 @@
 console.log("inicio de programa");
-var sustantivo = prompt("Ingresa un sustantivo: ");
-var adjetivo = prompt("Ingresa adjetivo: ");
-var verbo = prompt("Ingresa un verbo: ");
+
+var preguntas=3;
+var preguntasFaltantes="Quedan "+ preguntas+ "preguntas";
+alert("Este es el juego del cuenta cuentos. Sigue las instrucciones.");
+
+var sustantivo = prompt("Ingresa un sustantivo: "+ preguntasFaltantes);
+
+preguntas=preguntas-1;
+preguntasFaltantes="Quedan "+ preguntas+ " preguntas";
+
+var adjetivo = prompt("Ingresa adjetivo: "+ preguntasFaltantes);
+
+preguntas-=1;
+preguntasFaltantes="Quedan "+ preguntas+ " preguntas";
+
+var verbo = prompt("Ingresa un verbo: "+ preguntasFaltantes);
+
+
 document.write("<h1>El cuenta cuentos dice: </h1>");
 
 /*Los pequeños niños huyen del perro*/
